@@ -1,0 +1,11 @@
+black
+sqlalchemy[asyncio]
+asyncpg
+alembic
+yookassa
+redis
+orjson
+pydantic
+psycopg2-binary
+grpcio
+grpcio-tools

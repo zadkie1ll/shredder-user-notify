@@ -1,0 +1,16 @@
+services:
+  monkey-island-user-notify:
+    restart: unless-stopped
+    network_mode: host
+    image: monkey-island-user-notify:v0.1
+    env_file:
+      - .env
+    privileged: true
+    volumes:
+      - log:/app/log
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+volumes:
+  log:
